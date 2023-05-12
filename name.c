@@ -1,6 +1,6 @@
 /*
-    Name                  :   Nikhil Nawani
-    University Roll no    :   2021330
+    Name                  :   Nikhil 
+    University Roll no    :   
     Section               :   D
     Q2 .Write a C program that takes your full name (First, middle and last) as input
     and displays theabbreviations of the first and middle names except the last name 

@@ -1,6 +1,6 @@
 /* 
-    Name                  :   Nikhil Nawani
-    University Roll no    :   2021330
+    Name                  :   Nikhil 
+    University Roll no    :   
     Section               :   D
     Q4. Write a C program using dynamic memory allocation to insert elements in an array 
     and perform the following operation.

@@ -1,6 +1,6 @@
 /*
-    Name                  :   Nikhil Nawani
-    University Roll no    :   2021330
+    Name                  :   Nikhil 
+    University Roll no    :   
     Section               :   D
     Q3. Write a C program to check if the two strings entered by user are anagrams or
     not. Two wordsare Said to be anagrams if the letters of one word can be rearranged

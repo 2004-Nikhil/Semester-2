@@ -1,6 +1,6 @@
 /*  
-    Name                  :   Nikhil Nawani
-    University Roll no    :   2021330
+    Name                  :   Nikhil
+    University Roll no    :   
     Section               :   D
     Q5. Write a C function reverse to reverse the digits of a number using pointer 
     which receives number as an argument. 

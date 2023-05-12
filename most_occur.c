@@ -1,6 +1,6 @@
 /*
-    Name                  :   Nikhil Nawani
-    University Roll no    :   2021330
+    Name                  :   Nikhil 
+    University Roll no    :   
     Section               :   D
     Q1. Write a C program to enter a string and print the particular character which 
     occurred the most with its frequency.
