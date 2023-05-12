@@ -1,9 +1,5 @@
 /*
-<<<<<<< HEAD
     Name                  :   Nikhil 
-=======
-    Name                  :   Nikhil
->>>>>>> d65b7661f19eed87b9d19c3c8126e9323a4c9ade
     University Roll no    :   
     Section               :   D
     Q3. Write a C program to check if the two strings entered by user are anagrams or

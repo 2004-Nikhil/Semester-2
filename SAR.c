@@ -1,9 +1,5 @@
 /* 
-<<<<<<< HEAD
-    Name                  :   Nikhil 
-=======
     Name                  :   Nikhil
->>>>>>> d65b7661f19eed87b9d19c3c8126e9323a4c9ade
     University Roll no    :   
     Section               :   D
     Q4. Write a C program using dynamic memory allocation to insert elements in an array 
