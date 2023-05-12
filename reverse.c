@@ -1,5 +1,9 @@
 /*  
+<<<<<<< HEAD
     Name                  :   Nikhil
+=======
+    Name                  :   Nikhil 
+>>>>>>> d65b7661f19eed87b9d19c3c8126e9323a4c9ade
     University Roll no    :   
     Section               :   D
     Q5. Write a C function reverse to reverse the digits of a number using pointer 
