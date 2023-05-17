@@ -10,7 +10,8 @@ typedef struct student
 int main()
 {
     St *p;
-    int i,j,n;
+    int i,j,n,te;
+    char t[50];
     printf("Enter the number of employees \n");
     scanf("%d",&n);
     p = (St *)malloc(n * sizeof(St));
@@ -26,11 +27,26 @@ int main()
     {
         for(j=0;j<n-i-1;i++)
         {
-            if(strcmp((p+j)->na,(p+j+1)->na)>0)
+            if(strcmpi((p+j)->na,(p+j+1)->na)>0)
             {
-                
+                strcpy(t,(p+j)->na);
+                strcpy((p+j)->na,(p+j+1)->na);
+                strcpy((p+j+1)->na,t);
+
+                strcpy(t,(p+j)->add);
+                strcpy((p+j)->add,(p+j+1)->add);
+                strcpy((p+j+1)->add,t);
+
+                te=(p+j)->id;
+                (p+j)->id=(p+j+1)->id;
+                (p+j+1)->id=te;
             }
         }
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("The\temp_name\temp_ID\taddress \n");
+        printf("\t%s\t%d\t%s \n",(p+i)->na,(p+i)->id,(p+i)->add);
     }
     return 0;
 }
