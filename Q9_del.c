@@ -14,7 +14,7 @@ int main() {
         printf("Error in using the file.\n");
         return 1;
     }
-    printf("Enter the line file.\n");
+    printf("Enter the lines .\n");
     while((ch=getchar())!=EOF)
         fputc(ch,f1);
     fclose(f1);
@@ -27,9 +27,9 @@ int main() {
             word[i++]=ch;
         word[i]='\0';
         if (strcmp(word, "a") == 0 || strcmp(word, "the") == 0 || strcmp(word, "an") == 0)
-            fputc(' ',f2);
+            fputs("  ",f2);
         else 
-            fputs(strncat(word," ", 1),f2);
+            fputs(strcat(word," "),f2);
     }
     fclose(f1);
     fclose(f2);
