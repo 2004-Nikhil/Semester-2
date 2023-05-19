@@ -1,3 +1,11 @@
+/*
+    Name                  :   Nikhil Nawani
+    University Roll no    :   2021330
+    Section               :   D
+    Q11.Write a program to read 20 integers in a file. Separate them into two different 
+    files prime.txt and nonprime.txt such that all prime numbers are copied in prime.txt 
+    and remaining numbers in nonprime.txt.
+*/
 int isPrime(int); 
 #include <stdio.h>
 int main() 
