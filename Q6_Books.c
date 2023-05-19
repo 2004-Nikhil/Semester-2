@@ -37,7 +37,6 @@ int main()
         printf("Press 6 to Issue a book \n"); 
         printf("Press 7 to Exit\n"); 
         scanf("%d", &x);
-        printf("\t\t\t\t\t\t*****OUTPUT*****\n");
         switch(x)  
         { 
             case 1 : printf("Enter accession number: "); 

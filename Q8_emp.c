@@ -9,6 +9,7 @@
 */
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 typedef struct student
 {
     char na[50];
@@ -29,13 +30,13 @@ int main()
     {
         printf("Enter the emp_name,emp_ID and address \n");
         scanf("%s",(p+i)->na);
-        scanf("%s",(p+i)->id);
+        scanf("%d",&(p+i)->id);
         getchar();
         scanf("%s",(p+i)->add);
     }
     for(i=0;i<n-1;i++)
     {
-        for(j=0;j<n-i-1;i++)
+        for(j=0;j<n-i-1;j++)
         {
             if(strcmpi((p+j)->na,(p+j+1)->na)>0)
             {
@@ -56,8 +57,10 @@ int main()
     printf("\t\t\t\t\t\t*****OUTPUT*****\n");
     for(i=0;i<n;i++)
     {
-        printf("The\temp_name\temp_ID\taddress \n");
-        printf("\t%s\t%d\t%s \n",(p+i)->na,(p+i)->id,(p+i)->add);
+        printf("The emp_name = %s\n",(p+i)->na);
+        printf("The emp_ID = %d\n",(p+i)->id);
+        printf("The address = %s\n",(p+i)->add);
+        printf("\n");
     }
     return 0;
 }

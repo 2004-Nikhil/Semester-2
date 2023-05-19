@@ -47,6 +47,7 @@ int main()
     scanf("%d",&ro);
     printf("\t\t\t\t\t\t*****OUTPUT*****\n");
     year(S,py,n);
+    printf("\n");
     detail(S,ro,n);
     return 0;
 }
@@ -57,7 +58,7 @@ void year(St S[],int py,int n)
     for(i=0;i<n;i++)
     {
         if(S[i].yy==py)
-        printf("%s",S[i].na);
+        printf("%s\n",S[i].na);
     }
 }
 void detail(St S[],int ro,int n)
@@ -66,12 +67,12 @@ void detail(St S[],int ro,int n)
     printf("Detail of Student \n");
     for(i=0;i<n;i++)
     {
-        if(S[i].yy==ro)
+        if(S[i].r==ro)
         {
-            printf("Name of Students %s\n",S[i].na);
-            printf("Department of Students %s\n",S[i].depa);
-            printf("Course of Students %s\n",S[i].cou);
-            printf("Year of joinging %d\n",S[i].yy);
+            printf("Name of Students = %s\n",S[i].na);
+            printf("Department of Students = %s\n",S[i].depa);
+            printf("Course of Students = %s\n",S[i].cou);
+            printf("Year of joinging = %d\n",S[i].yy);
         }
     }
 }

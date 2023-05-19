@@ -3,10 +3,24 @@
 
 int main() {
     FILE *inputFile, *outputFile;
-    char line[100];
+    char line[100],ch;
     int charCount, digitCount;
 
-    inputFile = fopen("File.txt", "r");
+    inputFile = fopen("input.txt", "w");
+    if (inputFile == NULL) 
+    {
+        printf("Error opening the file.\n");
+        return 1;
+    }
+    printf("\t\t\t\t\t\t*****INPUT*****\n");
+    printf("Enter the lines .\n");
+    while ((ch = getchar()) != EOF)
+        fputc(ch, inputFile);
+
+    fputc(32, inputFile);
+    fclose(inputFile);
+
+    inputFile = fopen("input.txt", "r");
     if (inputFile == NULL) {
         printf("Error opening the input file.\n");
         return 1;
@@ -33,8 +47,5 @@ int main() {
 
     fclose(inputFile);
     fclose(outputFile);
-
-    printf("Counts have been written to Count.txt\n");
-
     return 0;
 }
