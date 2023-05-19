@@ -1,3 +1,13 @@
+/*
+    Name                  :   Nikhil Nawani
+    University Roll no    :   2021330
+    Section               :   D
+    Q7. Create a structure to specify data on students given below: Roll number, Name, 
+    Department, Course, Year of joining Assume that there are not more than 450 
+    students in the college.
+    (a) Write a function to print names of all students who joined in a particular year.
+    (b) Write a function to print the data of a student whose roll number is given.
+*/
 #include <stdio.h>
 typedef struct student
 {
@@ -14,6 +24,7 @@ int main()
     St S[450],*p;
     p=&S;
     int i,py,ro,n;
+    printf("\t\t\t\t\t\t*****INPUT*****\n");
     printf("Enter the number of students in collage \n");
     scanf("%d",&n);
     for(i=0;i<n;i++)
@@ -34,6 +45,7 @@ int main()
     scanf("%d",&py);
     printf("Enter a particular roll number to search\n");
     scanf("%d",&ro);
+    printf("\t\t\t\t\t\t*****OUTPUT*****\n");
     year(S,py,n);
     detail(S,ro,n);
     return 0;

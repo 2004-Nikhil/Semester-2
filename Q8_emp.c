@@ -1,3 +1,12 @@
+/*
+    Name                  :   Nikhil Nawani
+    University Roll no    :   2021330
+    Section               :   D
+    Q8. Write a C program to create a student structure having fields emp_name, 
+    emp_ID and address. Accept the details of 'n' employees, rearrange the data in 
+    alphabetical order of employee name and display it. Print the rearrange records.
+
+*/
 #include <stdio.h>
 #include <string.h>
 typedef struct student
@@ -12,6 +21,7 @@ int main()
     St *p;
     int i,j,n,te;
     char t[50];
+    printf("\t\t\t\t\t\t*****INPUT*****\n");
     printf("Enter the number of employees \n");
     scanf("%d",&n);
     p = (St *)malloc(n * sizeof(St));
@@ -43,6 +53,7 @@ int main()
             }
         }
     }
+    printf("\t\t\t\t\t\t*****OUTPUT*****\n");
     for(i=0;i<n;i++)
     {
         printf("The\temp_name\temp_ID\taddress \n");
