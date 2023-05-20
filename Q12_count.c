@@ -8,12 +8,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main() 
+{
     FILE *inputFile, *outputFile;
     char line[100], ch;
     int charCount, digitCount;
     inputFile = fopen("input.txt", "w");
-    if (inputFile == NULL) {
+    if (inputFile == NULL) 
+    {
         printf("Error opening the file.\n");
         return 1;
     }
@@ -24,16 +26,19 @@ int main() {
     fclose(inputFile);
     inputFile = fopen("input.txt", "r");
     outputFile = fopen("Count.txt", "w");
-    if (outputFile == NULL) {
+    if (outputFile == NULL) 
+    {
         printf("Error creating the output file.\n");
         fclose(inputFile);
         return 1;
     }
-    while (fgets(line, sizeof(line), inputFile) != NULL) {
+    while (fgets(line, sizeof(line), inputFile) != NULL) 
+    {
         charCount = 0;
         digitCount = 0;
 
-        for (int i = 0; line[i] != '\0'; i++) {
+        for (int i = 0; line[i] != '\0'; i++) 
+        {
             if (line[i] >= 48 && line[i] <= 57)
                 digitCount++;
             else if(line[i]!='\n')
